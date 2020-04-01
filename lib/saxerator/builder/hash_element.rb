@@ -17,6 +17,10 @@ module Saxerator
         ArrayElement.new(super, name)
       end
 
+      def to_s
+        self.empty? ? '' : self.inspect
+      end
+
       def to_h; self end
     end
   end
